@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #333333;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2em;
+  border-bottom: 2px solid #2ecc71;
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #2ecc71;
+  border-bottom: 1px solid #333333;
+  transition: all .4s ease;
+}
+a:hover {
+  color: #333333;
+  border-bottom: 1px solid #2ecc71;
+}
+
+nav {
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  left: -30%;
+  background-image: url(http://r.myxotod.de/codepen.io/maincode/ubuntu-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+nav a {
+  display: block;
+  width: 100%;
+  padding: 2em;
+  box-sizing: border-box;
+  background: rgba(51, 51, 51, 0.5);
+  border-bottom: 2px solid #2ecc71;
+  text-transform: uppercase;
+}
+nav a:hover {
+  border-bottom: 2px solid #2ecc71;
+  background: rgba(238, 238, 238, 0.5);
+}
+
+.toggle-nav {
+  font-size: 3em;
+  background: transparent;
+  color: #2ecc71;
+  line-height: 1em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  z-index: 100;
+  background: #eeeeee;
+}
+
+.wrapper {
+  position: relative;
+  box-shadow: 0 0 1em #333333;
+}
+.wrapper section {
+  position: relative;
+  background: #eeeeee;
+}
+.wrapper section article {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+.wrapper section article p {
+  margin-bottom: 1em;
+}
+.wrapper section article p:last-of-type {
+  margin-bottom: 0;
+}
+.wrapper section:after {
+  content: "";
+  display: block;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 30em;
+  width: 100%;
+}
+.wrapper section:nth-child(1):after {
+  background-image: url("http://cdn.eyeem.com/thumb/h/800/24778877c8ba7a9bb6318b660b8a2e47d374d43f-1370105135");
+}
+.wrapper section:nth-child(2):after {
+  background-image: url("http://cdn.eyeem.com/thumb/h/800/4f488e1db3960b9ba1246125e8181e7741564b62-1370076361");
+}
+.wrapper section:nth-child(3):after {
+  background-image: url("http://cdn.eyeem.com/thumb/h/800/8484e67f9b7bef4b2e00ddf0f353f036b4b0e9e6-1348396364");
+}
+.wrapper section:nth-child(4):after {
+  background-image: url("http://cdn.eyeem.com/thumb/h/800/704e38b95cb808b0df338a9661007f93ce3bed98-1348321831");
+}
+.wrapper section:nth-child(5):after {
+  background-image: url("http://cdn.eyeem.com/thumb/h/800/20b3440516db8c8df4490b17ba3109d91c07f839-1348321287");
+}
+.wrapper section:nth-child(6):after {
+  background-image: url("http://cdn.eyeem.com/thumb/h/800/d90429ba407c439beae9d23e468dc9c1deb7efdd-1348357036");
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper section article {
+    width: 80%;
+  }
+  .wrapper section:after {
+    height: 15em;
+  }
+}

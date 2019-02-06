@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/lib.css">
+    <!--base href="http://soroka-marketing.ru/" /> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Создание landing page | Рекламное агентство Soroka Marketing</title>
+    <meta name="description" content="">
+    <!--<base href="http://soroka-marketing.ru/"> -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css?version=2">
+    <link rel="stylesheet" href="css/responsive.css?version=2">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+
+<link rel="stylesheet" href="/assets/components/ajaxform/css/default.css" type="text/css" />
+
+<style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: #333333;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2em;
+  border-bottom: 2px solid #2ecc71;
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #2ecc71;
+  border-bottom: 1px solid #333333;
+  transition: all .4s ease;
+}
+a:hover {
+  color: #333333;
+  border-bottom: 1px solid #2ecc71;
+}
+
+nav {
+  width: 30%;
+  height: 100%;
+  position: fixed;
+  left: -30%;
+  background-image: url(http://r.myxotod.de/codepen.io/maincode/ubuntu-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+nav a {
+  display: block;
+  width: 100%;
+  padding: 2em;
+  box-sizing: border-box;
+  background: rgba(51, 51, 51, 0.5);
+  border-bottom: 2px solid #2ecc71;
+  text-transform: uppercase;
+}
+nav a:hover {
+  border-bottom: 2px solid #2ecc71;
+  background: rgba(238, 238, 238, 0.5);
+}
+
+.toggle-nav {
+  font-size: 3em;
+  background: transparent;
+  color: #2ecc71;
+  line-height: 1em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  z-index: 100;
+  background: #eeeeee;
+}
+
+.wrapper {
+  position: relative;
+  box-shadow: 0 0 1em #333333;
+}
+.wrapper section {
+  position: relative;
+  background: #eeeeee;
+}
+.wrapper section article {
+  width: 50%;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+.wrapper section article p {
+  margin-bottom: 1em;
+}
+.wrapper section article p:last-of-type {
+  margin-bottom: 0;
+}
+.wrapper section:after {
+  content: "";
+  display: block;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 30em;
+  width: 100%;
+}
+.wrapper section:nth-child(1):after {
+  background-image: url("http://onecanadaheadshots.co.uk/img/test/test1-3.png");
+}
+.wrapper section:nth-child(2):after {
+  background-image: url("http://onecanadaheadshots.co.uk/img/test/test1-4.png");
+}
+.wrapper section:nth-child(3):after {
+  background-image: url("http://cdn.eyeem.com/thumb/h/800/8484e67f9b7bef4b2e00ddf0f353f036b4b0e9e6-1348396364");
+}
+.wrapper section:nth-child(4):after {
+  background-image: url("http://cdn.eyeem.com/thumb/h/800/704e38b95cb808b0df338a9661007f93ce3bed98-1348321831");
+}
+.wrapper section:nth-child(5):after {
+  background-image: url("http://cdn.eyeem.com/thumb/h/800/20b3440516db8c8df4490b17ba3109d91c07f839-1348321287");
+}
+.wrapper section:nth-child(6):after {
+  background-image: url("http://cdn.eyeem.com/thumb/h/800/d90429ba407c439beae9d23e468dc9c1deb7efdd-1348357036");
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper section article {
+    width: 80%;
+  }
+  .wrapper section:after {
+    height: 15em;
+  }
+}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+
+
+<header class="header ">
+                <div class="hln pagehln2 fixed">
+                    
+                    
+                          <div class="sale" data-height="40" style="height: 40px;">
+                                <div class="wrap">
+                                    <a href="#pluses" class="btn to_pluses">узнать больше</a>
+                                </div>
+                                <div class="sale_close" id="sale_close"></div>
+                            </div>
+                    
+                    
+                    <div class="wrap">
+                        <div class="hamb2" id="hamb2">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="logo">
+                            <a href="index.html"><img src="img/logo.png"></a>
+                        </div>
+                        
+                        
+                        <div class="contacts">
+                            <div class="phone"><a href="tel:+7 (499) 424-03-65">+7 (499) 424-03-65</a></div>
+                            <div class="contacts_work_time">
+                                пн -пт с 10:00 до 19:00
+                            </div>
+                          
+                        </div>
+                     
+                        
+                        <div class="clear"></div>
+                    </div>
+                </div>
+           
+        </header>
+<div id="wrapper" class="wrap __blue wrapper">
+                        
+<section id="prn-wr" ;">
+    
+<!-- <div class="case-main">
+    <div class="case-logo"><img class="img-responsive" src="http://onecanadaheadshots.co.uk/img/test/test1-3.png" alt="http://onecanadaheadshots.co.uk/img/test/test1-3.png"></div> -->
+<h3 class="project-title" style="color: #111111;font-size: 24px;padding:20px 25px;background-color:rgba(255,255,255,0.8);display:inline-block;margin-top:70px;">Professional Headshots for Business & Social Media</h3>
+</div>
+  
+</section>
+
+
+<section id="task-wr">
+<div class="case-main">
+<div class="task">
+<p class="block-title">задача</p>
+<ul class="task-descr">
+<li>Создать новую посадочную страницу для Лондонского Headshot-фотографа</li>
+<li>Максимально увеличить поток заявок с Google Adwords в рамках бюджета</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="results-wr" style="position:relative;z-index:4;margin-bottom:100px;">
+ <div class="bg"><img src="http://onecanadaheadshots.co.uk/img/test/test1-2.png" alt="" /></div> 
+<div class="case-main">
+<p class="block-title">результаты</p>
+<div class="results clear">
+
+<p class="rsd" style="font-size:50px;">В 2,3 раза увеличилось</p>
+<p>количество заявок с Google Adwords при том же рекламном бюджете, 
+что был у Заказчика до обращения в Soroka Marketing</p>
+
+
+</div>
+</div>
+</section>
+<section id="done-wr"><!-- <div class="bg"> -->
+<div class="bg-1">&nbsp;</div>
+<div class="bg-2">&nbsp;</div>
+<!-- </div> -->
+<div class="case-main">
+<div id="done" class="done__blue">
+<div class="done done-title">
+<p>Что было сделано</p>
+</div>
+<ul>
+<li class="done done-1">Изучен бизнес клиента, продаваемые им<br /> товары, выявлены основные конкуренты и<br /> их сайты</li>
+<li class="done done-2">Проведен анализ рекламы конкурентов, выявлены ее сильные и слабые стороны</li>
+<li class="done done-3">Собран список из 41 117 ключевых слов, по которым бизнес клиента будет рекламироваться (использовались программные решения, ускоряющие сбор и фильтрацию семантического ядра)</li>
+<li class="done done-4">Заказчик осуществляет торговлю по всей России, соответственно, для рекламы его товаров вся страна была разделена на регионы, для каждого из которых была настроена собственная рекламная кампания с учетом региональных особенностей</li>
+<li class="done done-5">Настроены стратегии и цены клика, написаны различные тексты для разных регионов, настроен ретаргетинг</li>
+<li class="done done-6">Для ряда товарных позиций было настроено автоматическое указание стоимости в текстах объявлений согласно стоимости, указанной Заказчиком на сайте</li>
+<li class="done done-7">Проведено А/Б тестирование текстов объявлений и картинок в Рекламной Сети Яндекса (РСЯ). На основе результатов теста осуществляются показы наиболее привлекательных объявлений</li>
+<li class="done done-8">Опираясь на успешный опыт работы рекламных кампаний в Яндекс.Директ, были созданы аналогичные кампании в Google Adword</li>
+<li class="done done-9">Настроен бид-менеджер (система автоматического слежения за ставками) исходя из маржинальности каждого типа товаров и максимально допустимой цены клика, чтобы реклама могла работать "в плюс"</li>
+<li class="done done-10">Проведена интеграция с системой сквозной аналитики ROIstat, что позволило управлять рекламной кампанией на качественно новом уровне</li>
+<!-- <li class="done done-11"><span></span></li> --></ul>
+</div>
+</div>
+<section id="tech-wr">
+<div class="case-main">
+<p class="tech-title">Использованные технологии</p>
+<ul class="tech">
+<li><img src="img/tech/1.png" alt=""></li>
+<li><img src="img/tech/2.png" alt=""></li>
+<li><img src="img/tech/3.png" alt=""></li>
+</ul>
+<ul class="tech">
+<li><img src="img/tech/4.png" alt=""></li>
+<li><img src="img/tech/9.png" alt=""></li>
+<li><img src="img/tech/10.png" alt=""></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="cost-wr">
+    <div class="case-main">
+      <p class="cost-title">Интересует стоимость решения Вашей задачи?</p>
+      
+<form class="ajax_form" id="case_form" method="post" action="kejs/kejsyi-lending/onecanada.html">
+        <textarea name="message" placeholder="Опишите суть задачи своими словами."></textarea>
+        <div class="clear">
+          <input type="text" name="name" placeholder="Ваше имя">
+          <input type="text" name="phone" placeholder="Номер телефона">
+          <input class="yourtext" type="text" name="yourtext" placeholder="Ваш текст">
+          <button type="submit" class="btn">Получить расчет</button>
+         
+          <label class="persDataWrap" for="persData">Нажимая кнопку "Получить расчет", я подтверждаю, что согласен с <a href="politika-konfidenczialnosti-personalnyix-dannyix.html">политикой 
+конфиденциальности персональных данных</a> и даю свое СОГЛАСИЕ на их обработку.</label>
+        </div>
+
+	<input type="hidden" name="af_action" value="c22db6a3ee5eda6784838cf9edcac307" />
+</form>
+   <div class="clear"></div>
+      
+    </div>
+  </section>
+</div>
+
+
+<script type="text/javascript" src="js/lib.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="https://rawgit.com/metafizzy/isotope-packery/master/packery-mode.pkgd.min.js"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="js/slideout.min.js"></script>
+<script type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/parallax.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+<!-- Top100 (Kraken) Counter -->
+<script>
+(function(w, d, c) {
+    (w[c] = w[c] || []).push(function() {
+        var options = {
+            project: 4460932
+        };
+        try {
+            w.top100Counter = new top100(options);
+        } catch (e) {}
+    });
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function() { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src =
+        (d.location.protocol == "https:" ? "https:" : "http:") +
+        "//st.top100.ru/top100/top100.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(window, document, "_top100q");
+</script>
+<noscript><img src="//counter.rambler.ru/top100.cnt?pid=4460932"></noscript>
+    <!-- END Top100 (Kraken) Counter -->
+    <!-- RedHelper -->
+    <script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" src="https://web.redhelper.ru/service/main.js?c=ctrgroup"></script>
+    <!--/Redhelper -->
+    <script type="text/javascript" src="/assets/components/ajaxform/js/default.js"></script>
+<script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":2});</script>
+</body>
+
+    </html>
